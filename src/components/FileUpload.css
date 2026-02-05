@@ -1,0 +1,396 @@
+.upload-section {
+  width: 100%;
+  max-width: 600px;
+}
+
+.upload-container {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropzone {
+  position: relative;
+  width: 100%;
+  padding: 4rem 2rem;
+  background: var(--background);
+  border: none;
+  border-radius: 24px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-recessed);
+  transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropzone::before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 12px;
+  height: 12px;
+  background: radial-gradient(circle, var(--text-secondary) 0%, var(--text-secondary) 40%, transparent 40%);
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.dropzone::after {
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 12px;
+  height: 12px;
+  background: radial-gradient(circle, var(--text-secondary) 0%, var(--text-secondary) 40%, transparent 40%);
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.dropzone:hover {
+  box-shadow: var(--shadow-recessed), inset 0 0 0 2px var(--accent);
+  transform: translateY(-1px);
+}
+
+.dropzone.dragging {
+  box-shadow: var(--shadow-recessed), inset 0 0 0 2px var(--accent);
+  transform: scale(1.01);
+}
+
+.dropzone-icon {
+  margin: 0 auto 1.5rem;
+  color: var(--accent);
+}
+
+.dropzone h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.dropzone p {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  font-size: 0.9375rem;
+}
+
+.file-input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Primary Button - Elevated Industrial Key */
+.upload-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  min-height: 48px;
+  background: var(--accent);
+  color: white;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: var(--shadow-floating);
+  cursor: pointer;
+  transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.upload-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 24px -6px rgba(0, 0, 0, 0.2),
+              0 8px 12px -6px rgba(0, 0, 0, 0.15);
+}
+
+.upload-button:active {
+  transform: translateY(2px);
+  box-shadow: var(--shadow-pressed);
+}
+
+.upload-info {
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--text-secondary);
+}
+
+/* Progress and Success Cards with Neumorphic Elevation */
+.progress-container, .success-container {
+  position: relative;
+  width: 100%;
+  padding: 3rem 2rem;
+  background: var(--background);
+  border: none;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: var(--shadow-card);
+}
+
+/* Corner Screws */
+.progress-container::before,
+.progress-container::after,
+.success-container::before,
+.success-container::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: radial-gradient(circle, var(--text-secondary) 0%, var(--text-secondary) 40%, transparent 40%);
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.progress-container::before,
+.success-container::before {
+  top: 16px;
+  left: 16px;
+}
+
+.progress-container::after,
+.success-container::after {
+  top: 16px;
+  right: 16px;
+}
+
+.uploading-icon, .success-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  background: var(--background);
+  border-radius: 50%;
+  color: var(--accent);
+  box-shadow: var(--shadow-recessed);
+}
+
+.success-icon {
+  color: #4cd964;
+}
+
+.progress-container h3, .success-container h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.file-info {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  font-size: 0.9375rem;
+}
+
+.file-size {
+  font-size: 0.8125rem;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--text-secondary);
+}
+
+/* Progress Bar - Recessed Track with Elevated Fill */
+.progress-bar-container {
+  width: 100%;
+  height: 12px;
+  background: var(--background);
+  border-radius: 50px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  box-shadow: var(--shadow-recessed);
+}
+
+.progress-bar {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 50px;
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.3);
+  transition: width 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.progress-percentage {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+
+/* Cancel Button - Secondary Style */
+.cancel-button {
+  padding: 0.75rem 1.5rem;
+  min-height: 48px;
+  background: var(--background);
+  color: var(--accent);
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: var(--shadow-card);
+  cursor: pointer;
+  transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cancel-button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-floating);
+  color: #ff4757;
+}
+
+.cancel-button:active {
+  transform: translateY(2px);
+  box-shadow: var(--shadow-pressed);
+}
+
+/* QR Code Container - Elevated Card with Vents */
+.qr-code-container {
+  position: relative;
+  margin: 2rem 0;
+  padding: 2rem;
+  background: var(--background);
+  border-radius: 24px;
+  box-shadow: var(--shadow-floating);
+}
+
+/* Vent slots in top-right */
+.qr-code-container::before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 40px;
+  height: 8px;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 4px,
+    var(--background) 4px,
+    var(--background) 8px
+  );
+  box-shadow: var(--shadow-recessed);
+  border-radius: 4px;
+}
+
+.qr-code {
+  max-width: 250px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+/* Copy Button - Primary Accent */
+.copy-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  min-height: 48px;
+  background: var(--accent);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: var(--shadow-card);
+  cursor: pointer;
+  transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.copy-button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-floating);
+}
+
+.copy-button:active {
+  transform: translateY(2px);
+  box-shadow: var(--shadow-pressed);
+}
+
+/* New Upload Button - Secondary Neumorphic */
+.new-upload-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  min-height: 48px;
+  background: var(--background);
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: var(--shadow-card);
+  cursor: pointer;
+  transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.new-upload-button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-floating);
+}
+
+.new-upload-button:active {
+  transform: translateY(2px);
+  box-shadow: var(--shadow-pressed);
+}
+
+/* Expiry Notice - Recessed Panel */
+.expiry-notice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: var(--background);
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--text-secondary);
+  box-shadow: var(--shadow-recessed);
+}
+
+.expiry-notice svg {
+  color: #ffcc00;
+}
+
+@media (max-width: 768px) {
+  .upload-section {
+    max-width: 100%;
+  }
+
+  .dropzone {
+    padding: 3rem 1.5rem;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .copy-button, .new-upload-button {
+    width: 100%;
+  }
+}
