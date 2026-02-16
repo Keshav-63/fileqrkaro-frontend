@@ -1,0 +1,7 @@
+# robots.txt for fileqrkaro.keshavstack.tech
+# Last updated: 2026-02-16
+
+User-agent: *
+Allow: /
+
+Sitemap: https://fileqrkaro.keshavstack.tech/sitemap.xml
