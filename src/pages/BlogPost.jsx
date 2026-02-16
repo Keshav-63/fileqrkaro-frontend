@@ -1,7 +1,7 @@
-// src/pages/BlogPost.jsx
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { blogPosts } from '../data/blogPosts';
+import './BlogPost.css';
 
 const BlogPost = () => {
   const { slug } = useParams();
@@ -9,36 +9,51 @@ const BlogPost = () => {
 
   if (!post) {
     return (
-      <div style={{ textAlign: 'center', padding: '10rem 2rem' }}>
-        <h2>Article not found</h2>
-        <Link to="/blog" style={{ color: '#646cff' }}>Return to Blog</Link>
-      </div>
+      <main className="blogpost-page">
+        <div className="blogpost-container" style={{ textAlign: 'center', paddingTop: '10rem' }}>
+          <h2 style={{ color: 'var(--text)', marginBottom: '1rem' }}>Article not found</h2>
+          <Link to="/blog" className="blogpost-back-link">← Return to Blog</Link>
+        </div>
+      </main>
     );
   }
 
   return (
     <motion.main 
-      initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}
-      style={{ maxWidth: '800px', margin: '0 auto', padding: '4rem 1.5rem', lineHeight: '1.8' }}
+      className="blogpost-page"
+      initial={{ opacity: 0 }} 
+      animate={{ opacity: 1 }} 
+      transition={{ duration: 0.5 }}
     >
-      <Link to="/blog" style={{ color: '#646cff', textDecoration: 'none', display: 'inline-block', marginBottom: '2rem' }}>
-        ← Back to all articles
-      </Link>
-      
-      <header style={{ marginBottom: '3rem', textAlign: 'center' }}>
-        <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem', color: 'white', lineHeight: '1.2' }}>{post.title}</h1>
-        <div style={{ color: '#888', display: 'flex', justifyContent: 'center', gap: '1rem', fontSize: '0.9rem' }}>
-          <span>Written by <strong>{post.author}</strong></span>
-          <span>•</span>
-          <span>{post.date}</span>
-          <span>•</span>
-          <span>{post.readTime}</span>
-        </div>
-      </header>
+      <div className="blogpost-container">
+        <Link to="/blog" className="blogpost-back-link">
+          ← Back to all articles
+        </Link>
+        
+        <motion.header 
+          className="blogpost-header"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+        >
+          <h1 className="blogpost-title">{post.title}</h1>
+          <div className="blogpost-meta">
+            <span>Written by <strong>{post.author}</strong></span>
+            <span>•</span>
+            <span>{post.date}</span>
+            <span>•</span>
+            <span>{post.readTime}</span>
+          </div>
+        </motion.header>
 
-      {/* This renders the JSX content from your data file */}
-      <div className="blog-content" style={{ color: '#ddd', fontSize: '1.1rem' }}>
-        {post.content}
+        <motion.div 
+          className="blog-content"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+        >
+          {post.content}
+        </motion.div>
       </div>
     </motion.main>
   );
