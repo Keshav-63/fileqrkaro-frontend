@@ -4,6 +4,8 @@
   --foreground: #141414;
   --muted: #1f1f1f;
   --text: #ffffff;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
   --text-muted: #a0a0a0;
   --accent: #ff4757;
   --accent-foreground: #ffffff;

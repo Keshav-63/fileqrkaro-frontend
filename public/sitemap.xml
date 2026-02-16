@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    
     <url>
         <loc>https://fileqrkaro.keshavstack.tech/</loc>
-        <lastmod>2026-02-06</lastmod>
+        <lastmod>2026-02-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <image:image>
@@ -14,13 +15,124 @@
     </url>
     <url>
         <loc>https://fileqrkaro.keshavstack.tech/about</loc>
-        <lastmod>2026-02-06</lastmod>
+        <lastmod>2026-02-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://fileqrkaro.keshavstack.tech/contact</loc>
-        <lastmod>2026-02-06</lastmod>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://fileqrkaro.keshavstack.tech/privacy-policy</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://fileqrkaro.keshavstack.tech/terms</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://fileqrkaro.keshavstack.tech/blog</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://fileqrkaro.keshavstack.tech/blog/what-is-a-file-qr-code</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://fileqrkaro.keshavstack.tech/blog/how-to-generate-qr-for-file</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://fileqrkaro.keshavstack.tech/blog/security-of-file-qr-codes</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://fileqrkaro.keshavstack.tech/blog/use-cases-for-small-business</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://fileqrkaro.keshavstack.tech/blog/mobile-vs-desktop-transfers</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://fileqrkaro.keshavstack.tech/blog/troubleshooting-qr-generation</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://fileqrkaro.keshavstack.tech/blog/privacy-and-data-retention</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://fileqrkaro.keshavstack.tech/blog/environmental-impact-of-qr-codes</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://fileqrkaro.keshavstack.tech/blog/why-ephemeral-storage-is-the-future</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://fileqrkaro.keshavstack.tech/blog/qr-codes-in-education</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://fileqrkaro.keshavstack.tech/blog/evolution-of-file-sharing</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://fileqrkaro.keshavstack.tech/blog/share-large-files-without-email</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://fileqrkaro.keshavstack.tech/blog/mistakes-when-printing-qr-codes</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://fileqrkaro.keshavstack.tech/blog/qr-codes-in-real-estate</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://fileqrkaro.keshavstack.tech/blog/frictionless-networking-digital-portfolios</loc>
+        <lastmod>2026-02-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>

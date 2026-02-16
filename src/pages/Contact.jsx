@@ -131,6 +131,10 @@ const Contact = () => {
                 <a href="mailto:keshavdev241@gmail.com" className="info-link">
                   keshavdev241@gmail.com
                 </a>
+                <br />
+                <a href="mailto:shreeyanshsingh07@gmail.com" className="info-link">
+                  shreeyanshsingh07@gmail.com
+                </a>
               </div>
             </div>
             
