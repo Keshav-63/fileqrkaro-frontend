@@ -1,0 +1,10 @@
+services:
+  web:
+    container_name: fileqrkaro-frontend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: fileqrkaro-frontend:latest
+    ports:
+      - "8080:80"
+    restart: unless-stopped
